@@ -1,0 +1,123 @@
+.section{
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+    &__avatar{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 100px;
+        padding-bottom: 30px;
+        margin: auto;
+
+        &__img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+        }
+
+        &__name{
+          font-family: $montserrat;
+          font-weight: $font-bold;
+          font-size: $xx-large;
+          color:$black;
+        }
+
+        &__followers{
+            font-family: $open-sans;
+            font-weight: $font-light;
+            font-size: $medium;
+            color: $light-gray;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        height: 80%;
+        margin: auto;
+        padding-right: 100px;
+
+        &__one{
+            width: 100px;
+            height: 50px;
+            background-color: $cloud;
+            border:  $cloud;
+            margin-right: 40px;
+            color: #fff;
+            font-family: $montserrat;
+            font-weight: $font-regular;
+            font-size: $x-large;
+        }
+
+        &__two{
+            width: 100px;
+            height: 50px;
+            background-color: $coral;
+            border: $coral;
+            color: #fff;
+            font-family: $montserrat;
+            font-weight: $font-regular;
+            font-size: $x-large;
+        }
+    }
+}
+
+
+.video {
+    display: flex;
+    justify-content: start;
+    font-family: $montserrat;
+    font-weight: $font-bold;
+    font-size: $x-large;
+}
+
+.imagen_video {
+    height: 200px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px){
+
+    .section__avatar{
+        padding-left: 50px;
+    }
+
+    .section__avatar__img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .section__avatar__text{
+        padding-left: 20px;
+    }
+    .section__avatar__name{
+        font-size: $xx-large;
+    }
+    .video{
+        justify-content: center;
+    }
+
+}
+
+
+@media(min-width: 767px) and (max-width:1024px) {
+
+    .section__avatar{
+        padding-left: 50px;
+    }
+    .section__buttons{
+        padding-right: 40px;
+    }
+    .video{
+        justify-content: center;
+    }
+}
